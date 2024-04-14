@@ -57,7 +57,7 @@ const Account = () => {
   return (
     <div className='w-[100vw] h-[100vh] bg-lightBackground flex justify-center items-start font-fredoka'>
       <div className="shadow-lg rounded-md px-10 py-5 max-w-[90%] w-[400px] mt-40">
-        <div className="flex justify-center items-center gap-5">
+        <div className="flex items-center justify-center gap-5">
           <span onClick={() => setShowForm("login")} className={`${showForm === "login" ? "opacity-100" : "opacity-10"} cursor-pointer font-bold transition-opacity ease-in-out text-xl select-none`}>Login</span>
           <div className={`w-[45px] h-[25px] bg-black p-1 relative flex items-center rounded-full cursor-pointer`} onClick={() => setShowForm(showForm === "login" ? "signup" : "login")}>
             <div style={{ transform: `translateX(${showForm === "login" ? "0px" : "20px"})` }} className={`h-[100%] aspect-square bg-lightBackground rounded-full transition-all duration-150 ease-in-out`}></div>
